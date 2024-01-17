@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign-Up</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+        <style>
+
+            body {
+                margin: 0;
+            }
+
+            #outer-container {
+                background-color: blue;
+                display: flex;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .inner-container {
+                margin: 0;
+                padding: 20px;
+                background-color: aliceblue;
+                text-align: center;
+                font-family: 'Nunito Sans', sans-serif; 
+                border-radius: 2%;
+            }
+
+            h2 {
+                margin: 0;
+                padding-bottom: 5%;
+            }
+            
+            .input {
+                margin-bottom: 5%;
+                padding-left: 5%;
+                width: 94%;
+                height: 30px;
+                border-width: 1px;
+                border-radius: 5px;
+            }
+
+            .button {
+                position: relative;
+                width: 100%;
+                margin-bottom: 5%;
+                border-radius: 5px;
+            }
+
+            .signup {
+                background-color: blue;
+                color: white;
+                height: 40px;
+                border: 0;
+                transition-duration: 0.5s;
+            }
+
+            .signup:hover {
+                background-color: white;
+                color: black;
+                border: 1px black solid;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            .or {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .or:before, .or:after {
+                content:" ";
+                flex: 1 1;
+                border-bottom: 1px solid black;
+                margin: auto;
+            }
+
+            .fblogin {
+                background-color: orangered;
+                color: white;
+                height: 40px;
+                border: 1px orangered solid;
+                transition-duration: 0.5s;
+            }
+
+            .fblogin:hover {
+                background-color: white;
+                color: black;
+                border: 1px black solid;
+            }
+
+
+
+            .googlelogin {
+                height: 40px;
+                border-width: 1px;
+                transition-duration: 0.5s;
+            }
+
+            .googlelogin:hover {
+                background-color: blue;
+                color: white;
+                border: 1px blue solid;
+            }
+
+            img {
+                position: absolute;
+                left: 5px;
+                top: 10px;
+            }
+
+            .b2-text > p {
+                margin: 0%;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div id="outer-container">
+            <div class="inner-container">
+            <h2>Signup</h2>
+            <input class="email input" placeholder="Email"></input><br>
+            <input class="createpw input" placeholder="Create Password"></input><br>
+            <input class="confirmpw input" placeholder="Confirm Password"></input><br>
+            <button class="signup button">Signup</button>
+            <p class="option">Already have an account?<span><a href="#"> Login</a></span></p>
+            <p class="or">or</p>
+            <button class="fblogin button b2-text"><img src="./fb logo.svg" height="20px" align="left" alt="facebook logo" /> <p>Login with Facebook</p></button>
+            <button class="googlelogin button b2-text"><img src="./google logo.svg" height="20px" align="left" alt="Google logo" /> <p>Login with Google</p></button>
+            </div>
+        </div>
+    </body>
+</html>
